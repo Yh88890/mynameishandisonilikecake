@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <nav>
+           <ul id="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="vipcharge.html">Vip 会员</a></li>
+                <li><a href="schoolmelon.html">同校预约</a></li>
+                <li><a href="newnews.html">即时吃瓜</a></li>
+            </ul>
+
+            <style>
+                /* 确保 a 标签继承颜色，不会被浏览器默认蓝色覆盖 */
+                #menu a {
+                color: inherit;
+                text-decoration: none;
+                }
+            </style>
+   
+            <script>
+                setInterval(() => {
+                const color = '#' + Math.random().toString(16).slice(2, 8);
+                document.querySelector('#menu').style.color = color;
+                }, 150);
+            </script>
+
+
+        <link rel="stylesheet" href="style.css">
+        </nav>
+        <p id="rainbow">请截图保存最新网站，以防丢失</p>
+        推荐
+        <script>
+            
+            setInterval(() => {
+            document.getElementById('rainbow').style.color =
+                '#' + Math.random().toString(16).slice(2, 8);
+            }, 150);
+        </script>
+
+
+        <section class="attractions">
+
+        <div class="card">
+            <img src="images/abbate.png" width="100" height="60" style="border: 3px solid white;">
+            <h3>水嫩多汁！小苹果酒店偷拍。真的双爆了！！</h3>
+            <button class="likeBtn">like(<span class="count">0</span>)</button>
+        </div>
+
+        <div class="card">
+            <a href="images/amsr.mp4" target="_blank"></a>
+                <img src="images/branden.png" width="100" height="60" style="border: 3px solid white;">
+            </a>
+            <h3>超绝大比，急速观看！</h3>
+            <button class="likeBtn2">like(<span class="count">0</span>)</button>
+        </div>
+
+        <div class="card">
+            <a href="images/mala.mp4" target="_blank">
+                <img src="images/sanson.png" width="100" height="60" style="border: 3px solid white;">
+            </a>
+            <h3>顶级美比小姐姐，酒吧厕所偷拍</h3>
+            <button class="likeBtn3">like(<span class="count">0</span>)</button>
+        </div>
+
+        <div class="card">
+            <img src="images/darren.jpg" width="100" height="60" style="border: 3px solid white;">
+            <h3>麻豆传媒最新AV</h3>
+            <button class="likeBtn4">like(<span class="count">0</span>)</button>
+        </div>
+
+</section>
+<style>
+.attractions {
+    display: flex;           /* 横向排列 */
+    gap: 20px;               /* 每个 card 之间的间距 */
+    flex-wrap: wrap;         /* 超出屏幕自动换行 */
+}
+
+.card {
+    display: flex;           /* 让图片、标题、按钮竖直排列 */
+    flex-direction: column;  
+    align-items: center;     /* 水平居中 */
+    padding: 10px;
+    background: #222;        /* 可选：每个卡片背景 */
+    color: white;            /* 文字白色 */
+    border-radius: 5px;      /* 可选圆角 */
+}
+</style>
+
+    <script>
+        document.getElementById('greetBtn').addEventListener('click',() => {
+            alert("Welocom to singapore");
+        });
+    </script>
+    <script>
+        const toggle =document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+
+        const style = document.createElement('style');
+        style.textContent = '.dark {background:#111; color:#eee;} .dark nav {background:#222; }.dark a {color:#ffec99}';
+        document.head.appendChild(style);
+    </script>
+
+    <script>
+        document.querySelectorAll('.card .likeBtn').forEach(Btn =>{
+            Btn.addEventListener('click', () =>{
+                const countSpan = Btn.querySelector('.count');
+                countSpan.textContent = Number(countSpan.textContent) + 1;
+            });
+        });
+    </script>
+     <script>
+        document.querySelectorAll('.card .likeBtn2').forEach(Btn =>{
+            Btn.addEventListener('click', () =>{
+                const countSpan = Btn.querySelector('.count');
+                countSpan.textContent = Number(countSpan.textContent) + 1;
+            });
+        });
+    </script>
+     <script>
+        document.querySelectorAll('.card .likeBtn3').forEach(Btn =>{
+            Btn.addEventListener('click', () =>{
+                const countSpan = Btn.querySelector('.count');
+                countSpan.textContent = Number(countSpan.textContent) + 1;
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.card .likeBtn4').forEach(Btn =>{
+            Btn.addEventListener('click', () =>{
+                const countSpan = Btn.querySelector('.count');
+                countSpan.textContent = Number(countSpan.textContent) + 1;
+            });
+        });
+    </script>
+    </body>
+</html>

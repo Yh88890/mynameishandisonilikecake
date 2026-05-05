@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <nav>
+            <ul>
+                <ul id="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="vipcharge.html">Vip 会员</a></li>
+                <li><a href="schoolmelon.html">同校预约</a></li>
+                <li><a href="newnews.html">即时吃瓜</a></li>
+            </ul>
+
+            <style>
+                /* 确保 a 标签继承颜色，不会被浏览器默认蓝色覆盖 */
+                #menu a {
+                color: inherit;
+                text-decoration: none;
+                }
+            </style>
+   
+            <script>
+                setInterval(() => {
+                const color = '#' + Math.random().toString(16).slice(2, 8);
+                document.querySelector('#menu').style.color = color;
+                }, 150);
+            </script>
+            </ul>
+        </nav>
+        <h1>singaporezoo</h1>
+    </body>
+</html>
